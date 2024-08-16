@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-HHwDQvmfgqL0/a2Jl0Hhixab0UPGhHY8/BS7pPo/50swR8UBylXQOtIOTmYWML72I4HZzmMpx8F3lRLeflXkmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+    <!--email links-->
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("iauDBcNZna2qqRfo5");
+        })();
+    </script>
+
+</head>
+
+<body>
+    <div class="all-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home" id="logo"><img src="Bg/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" area-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="color: #22130f;">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+
+        <!-- Home section -->
+        <section id="home">
+            <!-- <video autoplay muted loop id="homeVideo">
+                <source src="Bg/BG_CLIP.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>Welcome to Caffè Donn!</h1>
+                    <h2>Your new favorite and affordable spot is coming!</h2>
+                    <p>Visit us and have a sip for a more refreshing and stress-free day.</p>
+                    <button id="btn">
+                        <a href="Menu.html">See our menu</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Home section end -->
+
+
+        <!-- About section -->
+        <section id="about">
+            <div class="container">
+                <div class="heading">About<span>Us</span></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="Bg/About us.png" alt="about">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Where Quality Meets Affordability</h4>
+                        <P>At Caffè Donn, we're more than just a coffee shop—we're your cozy spot for top-notch coffee and good vibes. Enjoy the finest brews without breaking the bank, with prices from just 59 to 69 pesos.</P>
+                        <h4>Cozy Atmosphere & Delicious Treats</h4>
+                        <p>Relax with friends or savor some quiet time while enjoying our freshly made doughnuts and waffles, perfect with your favorite coffee.</p>
+                        <h4>Convenient Hours</h4>
+                        <p>We're open from 5:00 PM to 12:30 AM, ready to serve you whenever you need a pick-me-up. Come experience the perfect blend of quality, affordability, and warmth at Caffè Donn.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- About section end -->
+
+
+        <!-- Products section -->
+        <section id="menu">
+            <div class="container">
+                <div class="heading3">Our<span>Menu</span></div>
+            </div>
+
+            <div class="container" id="container2">
+                <div class="row">
+                    <div class="col-md-4 py-4 py-md-0">
+                        <div class="card">
+                            <img src="Products/1.png" alt="menu1">
+                            <h4>Espresso</h4>
+                            <!-- <p>Our espresso is made from the finest beans and brewed by the best baristas in town. We make sure that every cup is made with love and passion to give you the best coffee experience.</p> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-4 py-md-0">
+                        <div class="card">
+                            <img src="Products/2.png" alt="menu2">
+                            <h4>Latte</h4>
+                            <!-- <p>Our latte is creamy and smooth, made with high-quality beans and expertly brewed to perfection.</p> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-4 py-md-0">
+                        <div class="card">
+                            <img src="Products/3.png" alt="menu3">
+                            <h4>Cappuccino</h4>
+                            <!-- <p>Enjoy our cappuccino with a rich espresso base topped with frothy milk foam for a delightful experience.</p> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-4 py-md-0">
+                        <div class="card">
+                            <img src="Products/4.png" alt="menu4">
+                            <h4>Americano</h4>
+                            <!-- <p>Our Americano is bold and full of flavor, brewed with the finest beans for a satisfying cup of coffee.</p> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-4 py-md-0">
+                        <div class="card">
+                            <img src="Products/5.png" alt="menu1">
+                            <h4>Espresso</h4>
+                            <!-- <p>Our espresso is made from the finest beans and brewed by the best baristas in town. We make sure that every cup is made with love and passion to give you the best coffee experience.</p> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-4 py-md-0">
+                        <div class="card">
+                            <img src="Products/2.png" alt="menu1">
+                            <h4>Espresso</h4>
+                            <!-- <p>Our espresso is made from the finest beans and brewed by the best baristas in town. We make sure that every cup is made with love and passion to give you the best coffee experience.</p> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-4 py-md-0">
+                        <div class="card">
+                            <img src="Products/7.png" alt="menu1">
+                            <h4>Espresso</h4>
+                            <!-- <p>Our espresso is made from the finest beans and brewed by the best baristas in town. We make sure that every cup is made with love and passion to give you the best coffee experience.</p> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-4 py-md-0">
+                        <div class="card">
+                            <img src="Products/8.png" alt="menu1">
+                            <h4>Espresso</h4>
+                            <!-- <p>Our espresso is made from the finest beans and brewed by the best baristas in town. We make sure that every cup is made with love and passion to give you the best coffee experience.</p> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-4 py-md-0">
+                        <div class="card">
+                            <img src="Products/9.png" alt="menu1">
+                            <h4>Espresso</h4>
+                            <!-- <p>Our espresso is made from the finest beans and brewed by the best baristas in town. We make sure that every cup is made with love and passion to give you the best coffee experience.</p> -->
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <button id="btn2"><a href="Menu.html">See more</a></button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Menu section end -->
+
+
+        <!-- Contact section -->
+        <section id="contact">
+            <div class="container mx-auto">
+                <div class="heading3">Contact<span>Us</span></div>
+            </div>
+            <div class="row">
+                <!-- Location Section -->
+                <div class="col-md-6 p-3 text-white location-section">
+                    <h1>Location</h1>
+                    <h4>Road 1, Northville 15, Cutud, Angeles City.</h4>
+                    <!-- Google Maps iframe -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15402.798178038347!2d120.6288319!3d15.1748365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396eff720aac825%3A0x704de73c49ad0546!2sCaff%C3%A8%20donn!5e0!3m2!1sen!2sph!4v1723717980295!5m2!1sen!2sph"
+                        width="100%" height="300" style="border:0; align-items: center;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- Contact Form Section -->
+                <div class="col-md-6">
+                    <h1 style="color: #22130f;">Contact form</h1>
+                    <div class="form-group">
+                        <h5 style="color: #22130f;" for=" name ">Name</h5>
+                        <input type="text " class="form-control " id="name " placeholder="Enter name " />
+                    </div>
+                    <div class="form-group ">
+                        <h5 style="color: #22130f;" for="email ">Email</h5>
+                        <input type="email " class="form-control " id="email " placeholder="Enter email " />
+                    </div>
+                    <div class="form-group ">
+                        <h5 style="color: #22130f;" for="message ">Message</h5>
+                        <textarea class="form-control " id="message " rows="3 "></textarea>
+                    </div>
+                    <!-- <button class="btn btn-secondary " onclick="goBack() ">Go Back</button> -->
+                    <button id="btn2" onclick="sendMail()">
+                        <a href="#">Submit</a>
+                    </button>
+
+                </div>
+            </div>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+        </section>
+        <!-- Contact section end -->
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+</body>
+
+<footer>
+    <div class="text-center text-lg-start text-white " style="background-color: #22130f; ">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0 ">
+            <!-- Section: Links -->
+            <section class=" ">
+                <!--Grid row-->
+                <div class="row ">
+                    <!-- Grid column -->
+                    <div style="color: #bcb2ab;" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
+                        <h6 class="text-uppercase mb-4 font-weight-bold ">
+                            OWNERS
+                        </h6>
+                        <p>
+                            Jamiel Gabriel T. Pascua <br> John Genrich T. Pascua <br> Rhein Nicolle A. Sanchez <br> Samuel Joseph B. Bajet <br> Nick Russel L. Sanchez <br> Kenneth E. Agustin
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none " />
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none " />
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none " />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 " style="color: #bcb2ab;">
+                        <h6 class="text-uppercase mb-4 font-weight-bold ">Contact</h6>
+                        <p><i class="fas fa-home mr-3 "></i> Road 1, Northville 15, Cutud, Angeles City.</p>
+                        <p><i class="fas fa-envelope mr-3 "></i> info@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3 "></i>09272410490</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 ">
+                        <h6 style="color: #bcb2ab;" class="text-uppercase mb-4 font-weight-bold ">Follow us</h6>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/profile.php?id=61557262811744&mibextid=LQQJ4d " class="btn btn-primary btn-floating m-1 " style="background-color: #3b5998 " " role="button "><i class="fab fa-facebook-f "></i
+              ></a>
+
+                        <!-- Twitter -->
+                        <!-- <a class="btn btn-primary btn-floating m-1 " style="background-color: #55acee " href="#! " role="button "><i class="fab fa-twitter "></i
+              ></a> -->
+
+                        <!-- Google -->
+                        <!-- <a class="btn btn-primary btn-floating m-1 " style="background-color: #dd4b39 " href="#! " role="button "><i class="fab fa-google "></i
+              ></a> -->
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/caffe_donn?igsh=YXQ5cGN5NW10amh5 " class="btn btn-primary btn-floating m-1 " style="background-color: #ac2bac " href="#! " role="button "><i class="fab fa-instagram "></i
+              ></a>
+
+                        <!-- Linkedin -->
+                        <!-- <a class="btn btn-primary btn-floating m-1 " style="background-color: #0082ca " href="#! " role="button "><i class="fab fa-linkedin-in "></i
+              ></a> -->
+                        <!-- Github -->
+                        <!-- <a class="btn btn-primary btn-floating m-1 " style="background-color: #333333 " href="#! " role="button "><i class="fab fa-github "></i
+              ></a> -->
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+</footer>
+
+</html>

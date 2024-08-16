@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+.all-content {
+    background: #bcb2ab;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+    width: 3px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #22130f;
+}
+
+html::-webkit-scrollbar {
+    width: 3px;
+    background: transparent;
+}
+
+
+/* navbar */
+
+#navbar {
+    background-color: #22130f;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo img {
+    border-radius: 10px;
+    width: 160px;
+    margin-left: 40px;
+}
+
+.navbar-nav {
+    margin-left: 50px;
+}
+
+.nav-item .nav-link {
+    color: #bcb2ab;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.nav-item .nav-link:hover {
+    background: #bcb2ab;
+    border-radius: 5px;
+    color: black;
+}
+
+#navbar form button {
+    background: #bcb2ab;
+    color: black;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#navbar form button:hover {
+    background: #22130f;
+    color: white;
+}
+
+
+/* navbar */
+
+
+/* home content */
+
+#home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Bg/Coffee-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-content {
+    padding-top: 125px;
+    margin-left: 56px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    color: #bcb2ab;
+}
+
+.home-content h2 {
+    font-size: 20px;
+    color: #bcb2ab;
+    text-align: left;
+}
+
+.home-content p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #bcb2ab;
+}
+
+
+/* Style for the button */
+
+#btn {
+    width: 150px;
+    height: 36px;
+    margin-top: 20px;
+    background: #bcb2ab;
+    /* Dark brown color */
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: background 0.5s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Style for the link inside the button */
+
+#btn a {
+    color: #22130f;
+    /* White text color */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 16px;
+    /* Adjust font size if needed */
+}
+
+#btn a:hover {
+    background: #22130f;
+    color: #bcb2ab;
+    width: 150px;
+    height: 36px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: none;
+    transition: background 0.5s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* home content */
+
+
+/* about */
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background: #bcb2ab;
+    font-family: 'Roboto', sans-serif;
+}
+
+#about .container {
+    padding-top: 50px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #22130f;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.heading span {
+    font-size: 50px;
+    color: #22130f;
+}
+
+#about .card {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+#about .card img {
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+#about-btn {
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid#22130f;
+    color: #22130f;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#about-btn:hover {
+    background: #22130f;
+    color: white;
+}
+
+#about p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #22130f;
+}
+
+#about h4 {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #22130f;
+    font-weight: bold;
+}
+
+@media screen and (max-width:982px) {
+    #about p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:766px) {
+    #about p {
+        font-size: 15px;
+    }
+    #about {
+        height: 120vh;
+    }
+}
+
+
+/* about */
+
+
+/* Menu Section */
+
+#menu {
+    background: #bcb2ab;
+    padding: 50px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #22130f;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.heading3 span {
+    color: #22130f;
+}
+
+#container2 .card {
+    border-radius: 10px;
+    border: 3px solid #22130f;
+    overflow: hidden;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin-top: 10px;
+}
+
+#container2 .card img {
+    width: 130px;
+    height: 200px;
+}
+
+#container2 .card h4 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.btn-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn2 {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    background: #22130f;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #22130f;
+    color: #bcb2ab;
+    transition: background 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+    padding: 0;
+    font-size: 30px;
+}
+
+#btn2 a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#btn2:hover {
+    background: #bcb2ab;
+    color: #22130f;
+}
+
+#btn2:hover a {
+    color: white;
+}
+
+
+/* 
+#container2 .card p {
+    text-align: center;
+    color: #555;
+} */
+
+.menu-container {
+    font-family: 'Arial', sans-serif;
+    background-color: transparent;
+    color: #000000;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.menu-table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-table td {
+    padding: 10px 5px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.menu-table td.price {
+    text-align: right;
+}
+
+.star {
+    color: #fdb208;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+
+/* contact section */
+
+#contact {
+    background: #bcb2ab;
+    padding: 50px 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    /* Prevent horizontal scrollbar */
+}
+
+.location-section {
+    background-color: #22130f;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn2 {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background: #22130f;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #22130f;
+    color: #bcb2ab;
+    transition: background 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+    padding: 0;
+    font-size: 30px;
+}
+
+#btn2 a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#btn2:hover {
+    background: #bcb2ab;
+    color: #22130f;
+}
+
+#btn2:hover a {
+    color: #22130f;
+}
