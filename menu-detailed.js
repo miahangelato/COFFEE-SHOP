@@ -2,6 +2,10 @@ const filterList = document.querySelector(".filter");
 const coffeefilterButtons = filterList.querySelectorAll(".coffee-filter-button");
 const menu = document.querySelectorAll(".menu");
 
+function goBack() {
+  window.history.back(); 
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   const backToTopButton = document.getElementById('backToTop');
 
