@@ -5,6 +5,13 @@
     font-family: 'Merriweather', serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .all-content {
     background: #bcb2ab;
 }
@@ -25,18 +32,46 @@ html::-webkit-scrollbar {
 
 
 /* navbar */
+
+@media (max-width: 600px) {
+    #caffedonnlogo {
+        transform: scale(0.8);
+        margin-bottom: 0 !important;
+    }
+
+    #nav-ul {
+        transform: scale(0.6);
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+        margin-left: -7rem !important;
+        padding: 0 !important;
+    }
+}
+#caffedonnlogo {
+    height: 4.5rem;
+    width: 12rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .navlinks {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 1.5rem;
 }
 
 #nav-ul {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 1rem;
+    display: flex; /* Display list items horizontally */
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
 }
+
+
 
 /* navbar */
 
