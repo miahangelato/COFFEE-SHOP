@@ -3,8 +3,9 @@ body {
   min-height: 100dvh;
   margin: 0;
   padding: 0;
+  background: rgb(230,211,179);
+background: linear-gradient(180deg, rgba(230,211,179,1) 0%, rgba(158,100,17,1) 98%);
 }
-
 /* navbar */
 
 #navbar {
@@ -164,8 +165,8 @@ body {
   padding: 2rem;
   border-radius: 50px;
   background: #faf7f5;
-  box-shadow:  15px 15px 30px #d5d2d0,
-              -15px -15px 30px #ffffff;
+  box-shadow:  15px 15px 30px #6a5a4f;
+              
   min-width: 20rem;
   max-width: 20rem;
   max-height: 28rem;
