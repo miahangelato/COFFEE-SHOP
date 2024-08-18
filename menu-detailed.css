@@ -3,8 +3,8 @@ body {
   min-height: 100dvh;
   margin: 0;
   padding: 0;
-  background: rgb(230,211,179);
-background: linear-gradient(180deg, rgba(230,211,179,1) 0%, rgba(158,100,17,1) 98%);
+  background: rgb(240,230,214);
+background: linear-gradient(180deg, rgba(240,230,214,1) 0%, rgba(194,165,129,1) 100%);
 }
 /* navbar */
 

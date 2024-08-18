@@ -25,49 +25,18 @@ html::-webkit-scrollbar {
 
 
 /* navbar */
-
-#navbar {
-    background-color: #22130f;
-    font-family: 'Roboto', sans-serif;
-}
-
-#logo img {
-    border-radius: 10px;
-    width: 160px;
-    margin-left: 40px;
-}
-
-.navbar-nav {
-    margin-left: 50px;
-}
-
-.nav-item .nav-link {
-    color: #bcb2ab;
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 0.5s;
-}
-
-.nav-item .nav-link:hover {
-    background: #bcb2ab;
-    border-radius: 5px;
+.navlinks {
+    text-decoration: none;
     color: black;
+    font-size: 18px;
 }
 
-#navbar form button {
-    background: #bcb2ab;
-    color: black;
-    border: 1px solid white;
-    font-weight: bold;
-    font-size: 20px;
+#nav-ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem;
 }
-
-#navbar form button:hover {
-    background: #22130f;
-    color: white;
-}
-
 
 /* navbar */
 
