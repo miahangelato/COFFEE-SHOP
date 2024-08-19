@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .social-icon {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 50%;
+        border: 2px solid #2b2b2c;
+        background-color: #2b2b2c;
+        color: white;
+        font-size: 24px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .social-icon:hover {
+        background-color: white;
+        color: #2b2b2c;
+      }
+    </style>
+
+    <script src="contact.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("iauDBcNZna2qqRfo5");
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="container border mt-3 bg-light">
+      <div class="row">
+        <!-- Location Section -->
+        <div class="col-md-6 p-5 text-white" style="background-color: #2b2b2c">
+          <h1>Location</h1>
+          <h4>Road 1, Northville 15, Cutud, Angeles City.</h4>
+          <!-- Google Maps iframe -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15402.798178038347!2d120.6288319!3d15.1748365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396eff720aac825%3A0x704de73c49ad0546!2sCaff%C3%A8%20donn!5e0!3m2!1sen!2sph!4v1723717980295!5m2!1sen!2sph"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="col-md-6 border-left py-3">
+          <h1>Contact form</h1>
+          <div class="form-group">
+            <h5 for="name">Name</h5>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="email">Email</h5>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="message">Message</h5>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-secondary" onclick="goBack()">Go Back</button>
+          <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+          <!-- <br> -->
+          <!-- <a href="https://www.facebook.com/profile.php?id=61557262811744&mibextid=LQQJ4d" class="social-icon" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/caffe_donn?igsh=YXQ5cGN5NW10amh5" class="social-icon" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+             -->
+        </div>
+      </div>
+    </div>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>
